@@ -3,8 +3,8 @@ script to upload (fit) files to strava
 
 ## Usage
 Install strava-v3 and stdio modules
-> npm install strava-v3  
-> npm install stdio  
+> $ npm install strava-v3  
+> $ npm install stdio  
 
 USAGE: node strava-file-upload.js [OPTION1] [OPTION2]... arg1 arg2...
 
@@ -12,7 +12,8 @@ The following options are supported:
 -f, --file <ARG1> 	input fit filename (mandatory)
 
 ### Example
-$ NODE_PATH=/usr/local/lib/node_modules/  node strava-file-upload.js  -f 895146395.fit  
+> $ NODE_PATH=/usr/local/lib/node_modules/  node strava-file-upload.js  -f 895146395.fit
+
 note: NODE_PATH might not be required on your system.
 
 
