@@ -24,9 +24,10 @@ In case of an 'Authorization Error' (no write permission) follow these steps: ht
 The url returned from getRequestAccessURL() is bascically the link you can find on the strava page
 https://www.strava.com/settings/api under the 'Update Application' section named 'OAuth Authorization page' but make sure the scope is set appropriately ('view_private,write').
 Put the token returned by strava.oauth.getToken() into the code:  
-
-strava.uploads.post({  
-    access_token: **'WRITE_ACCESS_TOKEN HERE',**  
-    data_type:    'fit',  
-    file:         args.file,  
- ...  
+```
+strava.uploads.post({
+    access_token: 'WRITE_ACCESS_TOKEN HERE',
+    data_type:    'fit',
+    file:         args.file,
+ ...
+```
