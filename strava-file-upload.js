@@ -18,15 +18,22 @@ strava.uploads.post({
     file:         args.file,
     statusCallback: function(err,payload) {
 	console.log("status callback payload:");
-	console.log(payload);
+	//console.log(payload);
+	console.log(payload.status);
 	if (err) {
+	    console.log("there was an ERROR:");
             console.log(err);
 	}
     }
 }, function(err,payload){
-    if(!err) {
+    if (!err) {
 	console.log("done:");
-        console.log(payload);
+        //console.log(payload);
+	console.log(payload.status);
+	if (payload.error) {
+	    console.log("ERROR: " + payload.error);
+	}
+	console.log(payload.status);
     }
     else {
 	console.log("post error:")
